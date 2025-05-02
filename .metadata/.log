@@ -8390,3 +8390,114 @@ Binding(CTRL+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2025-05-02 08:30:13.475 -----------------------------------------------
+eclipse.buildId=4.34.0.202502131954
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-02 08:31:50.978
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-02 08:34:04.364
+!MESSAGE Logback config file: C:\Users\Adimin\Documents\workspace-spring-tool-suite-4-4.28.1.RELEASE\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-05-02 08:34:06.009
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-05-02 08:34:06.009
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-05-02 08:34:06.598
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-05-02 08:34:06.598
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-05-02 08:34:16.515
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\Adimin\Downloads\sts-4.28.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/Adimin/Documents/workspace-spring-tool-suite-4-4.28.1.RELEASE/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1746155056514
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Users\Adimin\Downloads\sts-4.28.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.60.0.202502031607\servers\spring-boot-language-server\spring-boot-language-server-1.60.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:16.515
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-05-02 08:34:16.621
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 12124
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.220
+!MESSAGE Boot project ADDED: AadharUser
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.221
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.224
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.226
+!MESSAGE Boot project ADDED: CustomProperties_Value_ConfigurationProperties
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.227
+!MESSAGE Boot project ADDED: DataBaseConfiguration
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.228
+!MESSAGE Boot project ADDED: NotificationProject_@Qualifier_@Primary
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.230
+!MESSAGE Boot project ADDED: QueryParameter_Pathparameter_Requestbody
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.230
+!MESSAGE Boot project ADDED: SecondApplication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.232
+!MESSAGE Boot project ADDED: StudentProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.232
+!MESSAGE Boot project ADDED: UserRegistration
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.234
+!MESSAGE Boot project ADDED: firstwebapplication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.235
+!MESSAGE Boot project ADDED: onetoone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 08:34:23.236
+!MESSAGE Boot project ADDED: wishmessage
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-02 08:34:23.380
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Adimin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface 2 0 2025-05-02 08:34:52.770
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-05-02 08:34:52.770
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
