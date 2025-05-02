@@ -8501,3 +8501,440 @@ Binding(CTRL+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2025-05-02 09:27:04.330 -----------------------------------------------
+eclipse.buildId=4.34.0.202502131954
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-02 09:27:09.129
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 4 567 2025-05-02 09:27:17.384
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2025-05-02 09:27:17.384
+!MESSAGE Could not read metadata for 'onetoone'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/onetoone)[567]: java.lang.Exception: The project description file (.project) for 'onetoone' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:970)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:954)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:934)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:790)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1616)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2624)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2325)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:591)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:833)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:775)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1057)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:387)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:639)
+	at org.eclipse.osgi.container.Module.start(Module.java:498)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:620)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:348)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:179)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2025-05-02 09:27:17.391
+!MESSAGE The project description file (.project) for 'onetoone' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'onetoone' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:970)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:954)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:934)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:790)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1616)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2624)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2325)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:591)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:833)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:775)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1057)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:387)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:639)
+	at org.eclipse.osgi.container.Module.start(Module.java:498)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:620)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:348)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:179)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-02 09:27:18.599
+!MESSAGE Logback config file: C:\Users\Adimin\Documents\workspace-spring-tool-suite-4-4.28.1.RELEASE\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-05-02 09:27:20.646
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-05-02 09:27:20.646
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-05-02 09:27:21.619
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-05-02 09:27:21.620
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-05-02 09:27:30.417
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\Adimin\Downloads\sts-4.28.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/Adimin/Documents/workspace-spring-tool-suite-4-4.28.1.RELEASE/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1746158250417
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Users\Adimin\Downloads\sts-4.28.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.60.0.202502031607\servers\spring-boot-language-server\spring-boot-language-server-1.60.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:30.417
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-05-02 09:27:30.470
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 5812
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-02 09:27:35.261
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Adimin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.427
+!MESSAGE Boot project ADDED: AadharUser
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.428
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.431
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.432
+!MESSAGE Boot project ADDED: CustomProperties_Value_ConfigurationProperties
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.433
+!MESSAGE Boot project ADDED: DataBaseConfiguration
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.434
+!MESSAGE Boot project ADDED: NotificationProject_@Qualifier_@Primary
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.436
+!MESSAGE Boot project ADDED: QueryParameter_Pathparameter_Requestbody
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.437
+!MESSAGE Boot project ADDED: SecondApplication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.442
+!MESSAGE Boot project ADDED: StudentProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.444
+!MESSAGE Boot project ADDED: UserRegistration
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.451
+!MESSAGE Boot project ADDED: firstwebapplication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:27:35.452
+!MESSAGE Boot project ADDED: wishmessage
+
+!ENTRY org.eclipse.core.resources 4 567 2025-05-02 09:28:25.422
+!MESSAGE The project description file (.project) for 'onetoone' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'onetoone' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:970)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:954)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:829)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1109)
+	at org.eclipse.ui.actions.OpenResourceAction$1.doOpenWithReferences(OpenResourceAction.java:233)
+	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-05-02 09:28:57.836
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-05-02 09:28:57.857
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:39:12.619
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:39:12.620
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2025-05-02 09:39:13.578
+!MESSAGE Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.jst.server.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2025-05-02 09:39:13.579
+!MESSAGE Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.jst.server.preview.adapter.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2025-05-02 09:39:13.580
+!MESSAGE Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.jst.server.tomcat.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2025-05-02 09:39:13.581
+!MESSAGE Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.wst.server.http.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2025-05-02 09:39:13.582
+!MESSAGE Project facet wst.jsdt.web has not been defined. It is used in plugin org.eclipse.wst.server.preview.adapter.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:39:15.106
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:39:20.118
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:39:22.108
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:39:48.171
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:39:48.172
+!MESSAGE Boot project REMOVED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:39:48.175
+!MESSAGE Classpath changed for project: onetoone
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-05-02 09:39:48.466
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): demo does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2535)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2329)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2372)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-05-02 09:39:48.467
+!MESSAGE demo does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:39:53.238
+!MESSAGE Classpath changed for project: onetoone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:39:53.239
+!MESSAGE Boot project ADDED: onetoone
+
+!ENTRY Activator 4 0 2025-05-02 09:53:02.417
+!MESSAGE DebugException: Launch configuration QueryParameter_Pathparameter_Requestbody - QueryParameterPathparameterRequestbodyApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/QueryParameter_Pathparameter_Requestbody%20-%20QueryParameterPathparameterRequestbodyApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration QueryParameter_Pathparameter_Requestbody - QueryParameterPathparameterRequestbodyApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/QueryParameter_Pathparameter_Requestbody%20-%20QueryParameterPathparameterRequestbodyApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:464)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:390)
+	at org.springframework.ide.eclipse.boot.launch.BootLaunchConfigurationDelegate.isHiddenFromBootDash(BootLaunchConfigurationDelegate.java:285)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker.isRelevant(LaunchConfigurationTracker.java:182)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker.getRelevantConfs(LaunchConfigurationTracker.java:169)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker$2.run(LaunchConfigurationTracker.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-05-02 09:53:02.417
+!MESSAGE Launch configuration QueryParameter_Pathparameter_Requestbody - QueryParameterPathparameterRequestbodyApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/QueryParameter_Pathparameter_Requestbody%20-%20QueryParameterPathparameterRequestbodyApplication.launch does not exist.
+
+!ENTRY Activator 4 0 2025-05-02 09:53:02.419
+!MESSAGE DebugException: Launch configuration StudentProject - StudentProjectApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/StudentProject%20-%20StudentProjectApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration StudentProject - StudentProjectApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/StudentProject%20-%20StudentProjectApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:464)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:390)
+	at org.springframework.ide.eclipse.boot.launch.BootLaunchConfigurationDelegate.isHiddenFromBootDash(BootLaunchConfigurationDelegate.java:285)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker.isRelevant(LaunchConfigurationTracker.java:182)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker.getRelevantConfs(LaunchConfigurationTracker.java:169)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker$2.run(LaunchConfigurationTracker.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-05-02 09:53:02.420
+!MESSAGE Launch configuration StudentProject - StudentProjectApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/StudentProject%20-%20StudentProjectApplication.launch does not exist.
+
+!ENTRY Activator 4 0 2025-05-02 09:53:02.421
+!MESSAGE DebugException: Launch configuration UserRegistration - UserRegistrationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/UserRegistration%20-%20UserRegistrationApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration UserRegistration - UserRegistrationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/UserRegistration%20-%20UserRegistrationApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:464)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:390)
+	at org.springframework.ide.eclipse.boot.launch.BootLaunchConfigurationDelegate.isHiddenFromBootDash(BootLaunchConfigurationDelegate.java:285)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker.isRelevant(LaunchConfigurationTracker.java:182)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker.getRelevantConfs(LaunchConfigurationTracker.java:169)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker$2.run(LaunchConfigurationTracker.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-05-02 09:53:02.421
+!MESSAGE Launch configuration UserRegistration - UserRegistrationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/UserRegistration%20-%20UserRegistrationApplication.launch does not exist.
+
+!ENTRY Activator 4 0 2025-05-02 09:53:02.422
+!MESSAGE DebugException: Launch configuration firstwebapplication - FirstwebapplicationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/firstwebapplication%20-%20FirstwebapplicationApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration firstwebapplication - FirstwebapplicationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/firstwebapplication%20-%20FirstwebapplicationApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:464)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:390)
+	at org.springframework.ide.eclipse.boot.launch.BootLaunchConfigurationDelegate.isHiddenFromBootDash(BootLaunchConfigurationDelegate.java:285)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker.isRelevant(LaunchConfigurationTracker.java:182)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker.getRelevantConfs(LaunchConfigurationTracker.java:169)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker$2.run(LaunchConfigurationTracker.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-05-02 09:53:02.422
+!MESSAGE Launch configuration firstwebapplication - FirstwebapplicationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/firstwebapplication%20-%20FirstwebapplicationApplication.launch does not exist.
+
+!ENTRY Activator 4 0 2025-05-02 09:53:02.423
+!MESSAGE DebugException: Launch configuration wishmessage - WishmessageApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/wishmessage%20-%20WishmessageApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration wishmessage - WishmessageApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/wishmessage%20-%20WishmessageApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:464)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:390)
+	at org.springframework.ide.eclipse.boot.launch.BootLaunchConfigurationDelegate.isHiddenFromBootDash(BootLaunchConfigurationDelegate.java:285)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker.isRelevant(LaunchConfigurationTracker.java:182)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker.getRelevantConfs(LaunchConfigurationTracker.java:169)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker$2.run(LaunchConfigurationTracker.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-05-02 09:53:02.423
+!MESSAGE Launch configuration wishmessage - WishmessageApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/wishmessage%20-%20WishmessageApplication.launch does not exist.
+
+!ENTRY Activator 4 0 2025-05-02 09:53:02.426
+!MESSAGE DebugException: Launch configuration QueryParameter_Pathparameter_Requestbody - QueryParameterPathparameterRequestbodyApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/QueryParameter_Pathparameter_Requestbody%20-%20QueryParameterPathparameterRequestbodyApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration QueryParameter_Pathparameter_Requestbody - QueryParameterPathparameterRequestbodyApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/QueryParameter_Pathparameter_Requestbody%20-%20QueryParameterPathparameterRequestbodyApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:464)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:415)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProjectName(AbstractBootLaunchConfigurationDelegate.java:322)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProject(AbstractBootLaunchConfigurationDelegate.java:307)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker$2.run(LaunchConfigurationTracker.java:120)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-05-02 09:53:02.426
+!MESSAGE Launch configuration QueryParameter_Pathparameter_Requestbody - QueryParameterPathparameterRequestbodyApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/QueryParameter_Pathparameter_Requestbody%20-%20QueryParameterPathparameterRequestbodyApplication.launch does not exist.
+
+!ENTRY Activator 4 0 2025-05-02 09:53:02.437
+!MESSAGE DebugException: Launch configuration StudentProject - StudentProjectApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/StudentProject%20-%20StudentProjectApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration StudentProject - StudentProjectApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/StudentProject%20-%20StudentProjectApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:464)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:415)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProjectName(AbstractBootLaunchConfigurationDelegate.java:322)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProject(AbstractBootLaunchConfigurationDelegate.java:307)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker$2.run(LaunchConfigurationTracker.java:120)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-05-02 09:53:02.437
+!MESSAGE Launch configuration StudentProject - StudentProjectApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/StudentProject%20-%20StudentProjectApplication.launch does not exist.
+
+!ENTRY Activator 4 0 2025-05-02 09:53:02.455
+!MESSAGE DebugException: Launch configuration UserRegistration - UserRegistrationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/UserRegistration%20-%20UserRegistrationApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration UserRegistration - UserRegistrationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/UserRegistration%20-%20UserRegistrationApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:464)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:415)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProjectName(AbstractBootLaunchConfigurationDelegate.java:322)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProject(AbstractBootLaunchConfigurationDelegate.java:307)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker$2.run(LaunchConfigurationTracker.java:120)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-05-02 09:53:02.456
+!MESSAGE Launch configuration UserRegistration - UserRegistrationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/UserRegistration%20-%20UserRegistrationApplication.launch does not exist.
+
+!ENTRY Activator 4 0 2025-05-02 09:53:02.457
+!MESSAGE DebugException: Launch configuration firstwebapplication - FirstwebapplicationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/firstwebapplication%20-%20FirstwebapplicationApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration firstwebapplication - FirstwebapplicationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/firstwebapplication%20-%20FirstwebapplicationApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:464)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:415)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProjectName(AbstractBootLaunchConfigurationDelegate.java:322)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProject(AbstractBootLaunchConfigurationDelegate.java:307)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker$2.run(LaunchConfigurationTracker.java:120)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-05-02 09:53:02.457
+!MESSAGE Launch configuration firstwebapplication - FirstwebapplicationApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/firstwebapplication%20-%20FirstwebapplicationApplication.launch does not exist.
+
+!ENTRY Activator 4 0 2025-05-02 09:53:02.458
+!MESSAGE DebugException: Launch configuration wishmessage - WishmessageApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/wishmessage%20-%20WishmessageApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration wishmessage - WishmessageApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/wishmessage%20-%20WishmessageApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:464)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:415)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProjectName(AbstractBootLaunchConfigurationDelegate.java:322)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProject(AbstractBootLaunchConfigurationDelegate.java:307)
+	at org.springframework.ide.eclipse.boot.dash.util.LaunchConfigurationTracker$2.run(LaunchConfigurationTracker.java:120)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-05-02 09:53:02.459
+!MESSAGE Launch configuration wishmessage - WishmessageApplication at file:/C:/Users/Adimin/Downloads/onetoone/.metadata/.plugins/org.eclipse.debug.core/.launches/wishmessage%20-%20WishmessageApplication.launch does not exist.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:53:02.468
+!MESSAGE Classpath changed for project: onetoone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-02 09:53:02.470
+!MESSAGE Boot project REMOVED: onetoone
