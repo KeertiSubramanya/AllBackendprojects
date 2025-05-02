@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.acme</groupId>
+  <artifactId>bar</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>HibernateReverseEngineering</name>
+
+  <properties>
+    <postgresql.version>42.5.4</postgresql.version> <!-- PostgreSQL driver version -->
+    <hibernate.version>6.2.24.Final</hibernate.version> <!-- Hibernate Tools version -->
+  </properties>
+
+  <build>
+    <plugins>
+      <!-- Hibernate Tools Maven Plugin -->
+      <plugin>
+        <groupId>org.hibernate.tool</groupId>
+        <artifactId>hibernate-tools-maven</artifactId>
+        <version>${hibernate.version}</version>
+        <executions>
+          <execution>
+            <id>entity-generation</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>hbm2java</goal> <!-- Hibernate entity generation -->
+            </goals>
+            <configuration>
+              <ejb3>true</ejb3> <!-- Enables JPA annotations -->
+            </configuration>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>org.hibernate.tool</groupId>
+            <artifactId>hibernate-tools-orm</artifactId>
+            <version>${hibernate.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version> <!-- PostgreSQL dependency -->
+          </dependency>
+        </dependencies>
+      </plugin>
+
+      <!-- SQL Maven Plugin -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>sql-maven-plugin</artifactId>
+        <version>1.5</version> <!-- SQL Maven Plugin version -->
+        <dependencies>
+          <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+          </dependency>
+        </dependencies>
+        <executions>
+          <execution>
+            <id>create-database</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>execute</goal>
+            </goals>
+            <configuration>
+              <driver>org.postgresql.Driver</driver>
+              <url>jdbc:postgresql://localhost:5432/Dronezzfly</url> <!-- Update database details -->
+              <username>postgres</username> <!-- Replace with your username -->
+              <password>Dronezz@1234</password> <!-- Replace with your password -->
+              <autocommit>true</autocommit>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
